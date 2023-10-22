@@ -1,0 +1,48 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   whatever.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: skorte <skorte@student.42wolfsburg.de>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/08/24 12:57:11 by skorte            #+#    #+#             */
+/*   Updated: 2022/08/24 17:04:16 by skorte           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef WHATEVER_HPP
+# define WHATEVER_HPP
+
+#include <ostream>
+#include <iostream>
+#include <sstream>
+#include <string>
+
+template <typename T>
+
+void swap(T &a, T &b)
+{
+	T temp = a;
+	a = b;
+	b = temp;
+}
+
+template <typename T>
+
+T max(T &a, T &b)
+{
+	if (a > b)
+		return a;
+	return b;
+}
+
+template <typename T>
+
+T min(T &a, T &b)
+{
+	if (a < b)
+		return a;
+	return b;
+}
+
+#endif
